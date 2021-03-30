@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 80px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  height: 5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cover_Background {
+  height: 100vh !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav_text a {
+  color: white !important;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+
+.navbar-brand {
+  width: 20%;
+}
+
+.navbar-brand > span {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.hero {
+  background-image: url("Assets/images/bg-image-1.jpg");
+}
+
+.hero_Title > h1 {
+  letter-spacing: 0.1em;
+}
+
+.hero_Desc > h3 {
+  margin-top: 70px;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.hero_Button {
+  width: 250px;
+}
+
+.hero_Button > button {
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  margin-top: 70px;
+  padding: 1em 3em;
+  font-size: 1em;
+}
+
+.hero_scroll {
+  margin-bottom: 1rem;
+}
+
+.hero_scroll > p {
+  margin: 0;
+}
+
+.games {
+  background-image: url("Assets/images/bg-image-2.jpg");
+}
+
+.features {
+  background-image: url("Assets/images/group.jpg");
+}
+
+.requirements {
+  background-image: url("Assets/images/requirements.png");
+  background-size: contain !important;
+}
+
+.topscores {
+  background-image: url("Assets/images/bg-image-3.jpg");
+  background-position: top !important;
+}
+
+.newsletter {
+  background-image: url("Assets/images/bg-image-3.jpg");
+  background-position: bottom !important;
+}
