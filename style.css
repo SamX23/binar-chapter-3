@@ -47,6 +47,7 @@ nav {
 
 .hero {
   background-image: url("Assets/images/bg-image-1.jpg");
+  box-shadow: inset 0px -100px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 .hero_Title > h1 {
@@ -72,7 +73,7 @@ nav {
 }
 
 .hero_scroll {
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
 .hero_scroll > p {
@@ -100,4 +101,12 @@ nav {
 .newsletter {
   background-image: url("Assets/images/bg-image-3.jpg");
   background-position: bottom !important;
+}
+
+.footer_text {
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer_misc > li {
+  list-style: none;
 }
