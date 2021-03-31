@@ -1,3 +1,4 @@
+/* Global Styling */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
 
 h1 {
@@ -23,6 +24,8 @@ nav {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Specific styling */
+
 .cover_Background {
   height: 100vh !important;
   background-size: cover;
@@ -47,7 +50,7 @@ nav {
 
 .hero {
   background-image: url("Assets/images/bg-image-1.jpg");
-  box-shadow: inset 0px -100px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -100px 15px 0px rgba(0, 0, 0, 0.541);
 }
 
 .hero_Title > h1 {
@@ -101,12 +104,30 @@ nav {
 .newsletter {
   background-image: url("Assets/images/bg-image-3.jpg");
   background-position: bottom !important;
+  display: grid;
+  grid-template-rows: 5fr 1fr 1fr;
+  color: white;
+}
+
+.footer_images {
 }
 
 .footer_text {
-  grid-template-columns: 1fr 1fr;
+  border-top: 5px solid rgb(39, 39, 39);
+  height: fit-content;
+  padding-top: 2rem;
 }
 
-.footer_misc > li {
-  list-style: none;
+.footer_text > p {
+  text-align: left;
+}
+
+.footer_text > div {
+  text-align: right;
+}
+
+.footer_misc > a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  color: white;
 }
