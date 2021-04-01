@@ -138,8 +138,26 @@ nav {
 
 /* Requirements section */
 .requirements {
-  background-image: url("Assets/images/requirements.png");
-  background-size: contain !important;
+  background-image: url("Assets/images/bg-image-4.jpg");
+  display: grid;
+}
+
+.requirement_Table {
+  border-color: rgba(151, 151, 151, 1) !important;
+}
+
+.requirements h3 {
+  font-size: 4rem;
+  letter-spacing: 0.25rem;
+  padding-bottom: 10rem;
+}
+
+.table_Content {
+  padding: 0.5rem;
+}
+
+.table_Content > h5 {
+  color: #f3af34;
 }
 
 /* Top scores section */
