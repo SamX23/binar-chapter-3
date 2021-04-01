@@ -85,6 +85,29 @@ nav {
 
 .games {
   background-image: url("Assets/images/bg-image-2.jpg");
+  display: grid;
+}
+
+.games_Title {
+  margin: auto auto 0 auto !important;
+}
+
+.games_Title > h6 {
+  padding: 0;
+}
+
+.games_Desc > h2 {
+  font-size: 2.5rem;
+}
+
+.games_Title > h6,
+.games_Desc > h2 {
+  letter-spacing: 0.2em;
+}
+
+.games_slider {
+  background-color: rebeccapurple;
+  height: 5rem;
 }
 
 .features {
