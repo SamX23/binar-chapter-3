@@ -164,6 +164,47 @@ nav {
 .topscores {
   background-image: url("Assets/images/bg-image-3.jpg");
   background-position: top !important;
+  display: grid;
+}
+
+.topscores_Description {
+  padding-bottom: 3rem;
+}
+
+.topscores_Description > h5,
+.topscores_Description > p {
+  padding: 0.5rem 0;
+}
+
+.topscores_Description > h5 {
+  font-size: 4rem;
+}
+
+.topscores_Button {
+  width: 260px !important;
+  height: 60px !important;
+}
+
+.topscores_Cards {
+  height: 40rem;
+  position: relative;
+  padding-left: 5rem;
+}
+
+.card_Middle {
+  top: 35% !important;
+}
+
+.card_Bottom {
+  top: 70% !important;
+}
+
+.topscores_Cards .card {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.card-title {
+  color: #f3af34 !important;
 }
 
 /* Newsletter section */
@@ -218,7 +259,7 @@ nav {
   font-size: smaller;
 }
 
-.inputButton {
+.orangeButton {
   color: black !important;
   background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
   border: unset;
