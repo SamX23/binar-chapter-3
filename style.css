@@ -109,11 +109,57 @@ nav {
   color: white;
 }
 
-.footer_images {
+.newsletter_Text > h1 {
+  font-size: 4rem;
+}
+.newsletter_Text > h6,
+.newsletter_Text > p {
+  font-size: x-large;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.newsletter_Form {
+  padding-top: 2rem;
+}
+.newsletter_Form > div {
+  position: relative;
+  height: 3rem;
+}
+
+.newsletter_Form input {
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 181, 72, 1);
+  border: unset;
+}
+
+.newsletter_Form input:focus {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 181, 72, 1);
+  border: unset;
+}
+.newsletter_Form input::placeholder {
+  color: rgba(255, 181, 72, 1);
+}
+
+.inputLabel {
+  color: white;
+  position: absolute;
+  top: 0;
+  padding-left: 1rem;
+  padding-top: 0.25rem;
+  font-size: smaller;
+}
+
+.inputButton {
+  color: black !important;
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  border: unset;
 }
 
 .footer_text {
-  border-top: 5px solid rgb(39, 39, 39);
+  border-top: 2px solid #ffffff50;
   height: fit-content;
   padding-top: 2rem;
 }

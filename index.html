@@ -103,10 +103,10 @@
     </main>
 
     <footer id="footer" class="newsletter cover_Background">
-      <div class="row container-lg m-auto">
-        <div class="footer_images"></div>
-        <div class="footer_newsletter">
-          <div class="col-4 newsletter_Text">
+      <div class="row h-100 container-lg m-auto align-items-center">
+        <div class="col-5 footer_images"></div>
+        <div class="col-7 footer_newsletter">
+          <div class="row newsletter_Text">
             <h6>Want to stay in touch ?</h6>
             <h1>NEWSLETTER SUBSCRIBE</h1>
             <p>
@@ -116,9 +116,28 @@
               inventore iusto expedita non eaque.
             </p>
           </div>
-          <div class="col-8 newsletter_Form">
-            <form action=""></form>
-          </div>
+          <form class="row g-3 newsletter_Form">
+            <div class="col-8">
+              <input
+                type="email"
+                class="w-100 h-100 form-control"
+                id="inputEmail"
+                aria-describedby="emailHelp"
+                placeholder="youremail@binar.co.id"
+              />
+              <label class="inputLabel" for="inputEmail"
+                >Your email address</label
+              >
+            </div>
+            <div class="col-4 text-center">
+              <button
+                type="submit"
+                class="w-100 h-100 btn btn-primary inputButton fw-bold"
+              >
+                Subscribe Now
+              </button>
+            </div>
+          </form>
         </div>
       </div>
       <div class="row footer_nav container-lg m-auto"></div>
