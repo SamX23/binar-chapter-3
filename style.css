@@ -48,6 +48,7 @@ nav {
   font-size: 1.5em;
 }
 
+/* Hero section */
 .hero {
   background-image: url("Assets/images/bg-image-1.jpg");
   box-shadow: inset 0px -100px 15px 0px rgba(0, 0, 0, 0.541);
@@ -83,6 +84,7 @@ nav {
   margin: 0;
 }
 
+/* Games section */
 .games {
   background-image: url("Assets/images/bg-image-2.jpg");
   display: grid;
@@ -110,20 +112,43 @@ nav {
   height: 5rem;
 }
 
+/* Features section */
 .features {
   background-image: url("Assets/images/group.jpg");
+  display: grid;
+  letter-spacing: 0.2em;
 }
 
+.features_Title > h3 {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+.description_Item {
+  padding: 1.5rem 0;
+}
+.description_Item > h3 {
+  color: #f3af34;
+}
+
+.description_Item > p {
+  letter-spacing: unset;
+  text-align: justify;
+}
+
+/* Requirements section */
 .requirements {
   background-image: url("Assets/images/requirements.png");
   background-size: contain !important;
 }
 
+/* Top scores section */
 .topscores {
   background-image: url("Assets/images/bg-image-3.jpg");
   background-position: top !important;
 }
 
+/* Newsletter section */
 .newsletter {
   background-image: url("Assets/images/bg-image-3.jpg");
   background-position: bottom !important;
@@ -181,6 +206,7 @@ nav {
   border: unset;
 }
 
+/* Footer section */
 .footer_text {
   border-top: 2px solid #ffffff50;
   height: fit-content;
