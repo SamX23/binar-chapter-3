@@ -32,6 +32,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #080a0b;
+  box-shadow: inset 0px 0px 91px 18px rgba(0, 0, 0, 1);
 }
 
 .nav_text a {
@@ -52,7 +53,7 @@ nav {
 /* Hero section */
 .hero_Section {
   background-image: url("Assets/images/main-bg.jpg");
-  box-shadow: inset 0px -100px 15px 0px rgba(0, 0, 0, 0.541);
+  box-shadow: inset 0px -80px 25px 0px rgba(0, 0, 0, 0.541);
   display: grid;
   grid-template-rows: 11fr 1fr;
 }
@@ -91,6 +92,7 @@ nav {
 .games_Section {
   background-image: url("Assets/images/the-games-bg.jpg");
   display: grid;
+  grid-template-rows: 3fr 9fr;
 }
 
 .games_Title {
@@ -143,6 +145,7 @@ nav {
 .requirements_Section {
   background-image: url("Assets/images/requirements.png");
   display: grid;
+  box-shadow: inset 400px 0px 1000px 200px rgb(0 0 0 / 90%);
 }
 
 .requirement_Table {
@@ -153,10 +156,6 @@ nav {
   font-size: 4rem;
   letter-spacing: 0.25rem;
   padding-bottom: 10rem;
-}
-
-.table_Content {
-  padding: 0.5rem;
 }
 
 .table_Content > h5 {
@@ -277,6 +276,7 @@ nav {
 
 .footer_text > p {
   text-align: left;
+  color: #8d8d8d;
 }
 
 .footer_text > div {
