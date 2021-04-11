@@ -24,6 +24,16 @@ nav {
   font-family: "Open Sans", sans-serif;
 }
 
+li a,
+a {
+  color: rgb(204, 204, 204) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: white !important;
+}
+
 /* Specific styling */
 
 .cover_Background {
@@ -36,7 +46,6 @@ nav {
 }
 
 .nav_text a {
-  color: white !important;
   font-size: 1em;
   letter-spacing: 0.1em;
 }
@@ -84,7 +93,7 @@ nav {
   text-align: center;
 }
 
-.hero_scroll > p {
+.hero_scroll p {
   margin: 0;
 }
 
@@ -180,6 +189,11 @@ nav {
 
 .topscores_Description > h5 {
   font-size: 4rem;
+  letter-spacing: 0.5rem;
+}
+
+.topscores_Description > p {
+  font-size: 1.5rem;
 }
 
 .topscores_Button {
@@ -191,6 +205,12 @@ nav {
   height: 40rem;
   position: relative;
   padding-left: 5rem;
+}
+
+.card {
+  border-radius: 10px !important;
+  width: 350px !important;
+  text-align: center;
 }
 
 .card_Middle {
@@ -214,8 +234,7 @@ nav {
   background-image: url("Assets/images/bg-image-3.jpg");
   background-position: bottom !important;
   display: grid;
-  grid-template-rows: 5fr 1fr 1fr;
-  color: white;
+  grid-template-rows: 10fr 1fr 1fr;
 }
 
 .newsletter_Text > h1 {
@@ -253,7 +272,6 @@ nav {
 }
 
 .inputLabel {
-  color: white;
   position: absolute;
   top: 0;
   padding-left: 1rem;
@@ -268,10 +286,28 @@ nav {
 }
 
 /* Footer section */
+.footer_nav {
+  grid-template-columns: 9fr 3fr;
+}
+
+.footer_navLeft ul {
+  list-style-type: none;
+  justify-content: flex-end;
+  justify-content: space-evenly;
+  margin-left: 25%;
+}
+
+.footer_navRight {
+  text-align: right;
+  justify-content: space-evenly;
+  margin-left: 25%;
+}
+
 .footer_text {
   border-top: 2px solid #ffffff50;
   height: fit-content;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .footer_text > p {
@@ -284,7 +320,7 @@ nav {
 }
 
 .footer_misc > a {
-  text-decoration: none;
   margin: 0 0.5rem;
-  color: white;
 }
+
+/* Additional Animation */

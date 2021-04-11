@@ -61,7 +61,7 @@
       </nav>
     </header>
     <main>
-      <div class="hero_Section cover_Background">
+      <div id="main" class="hero_Section cover_Background">
         <div class="m-auto text-center">
           <div class="hero_Title">
             <h1>PLAY TRADITIONAL GAME</h1>
@@ -76,14 +76,16 @@
           </div>
         </div>
         <div class="hero_scroll">
-          <p>THE STORY</p>
-          <img src="Assets/svg/scroll-down.svg" alt="" />
+          <a href="">
+            <p>THE STORY</p>
+            <img src="Assets/svg/scroll-down.svg" alt="" />
+          </a>
         </div>
       </div>
 
-      <div class="games_Section cover_Background">
+      <div id="about" class="games_Section cover_Background">
         <div class="row container games_Title">
-          <h6>What's so special?</h6>
+          <h5>What's so special?</h5>
         </div>
         <div class="row container mx-auto">
           <div class="col-3 g-0 games_Desc">
@@ -169,7 +171,7 @@
         </div>
       </div>
 
-      <div class="features_Section cover_Background">
+      <div id="gamefeatures" class="features_Section cover_Background">
         <div class="row container m-auto">
           <div class="col-7 features_Avatar"></div>
           <div class="col-5">
@@ -199,7 +201,10 @@
         </div>
       </div>
 
-      <div class="requirements_Section cover_Background">
+      <div
+        id="systemrequirements"
+        class="requirements_Section cover_Background"
+      >
         <div class="row container m-auto position-relative">
           <span
             class="position-absolute top-0 start-50 translate-middle text-center"
@@ -277,12 +282,9 @@
           </div>
           <div class="col-6 topscores_Cards">
             <div class="row">
-              <div
-                class="card position-absolute top-0 start-50"
-                style="width: 18rem"
-              >
+              <div class="card position-absolute top-0 start-50">
                 <div class="card-img">
-                  <img src="Assets/svg/twitch.svg" alt="" />
+                  <img src="Assets/svg/twitter.svg" alt="twitter" />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Evan lahti</h5>
@@ -296,44 +298,38 @@
                 </div>
               </div>
             </div>
-
             <div class="row">
-              <div
-                class="card position-absolute start-0 card_Middle"
-                style="width: 18rem"
-              >
+              <div class="card position-absolute start-0 card_Middle">
                 <div class="card-img">
-                  <img src="Assets/svg/twitch.svg" alt="" />
+                  <img src="Assets/svg/twitter.svg" alt="twitter" />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Evan lahti</h5>
                   <h6 class="card-subtitle mb-2 text-muted">PC Gamer</h6>
                   <p class="card-text">
-                    "One of my gaming highlights of the year"
+                    "The next big thing in the world of streaming and survival
+                    games."
                   </p>
                   <h6 class="card-subtitle mb-2 text-muted">
-                    October 18, 2021
+                    December 21, 2021
                   </h6>
                 </div>
               </div>
             </div>
-
             <div class="row">
-              <div
-                class="card position-absolute start-50 card_Bottom"
-                style="width: 18rem"
-              >
+              <div class="card position-absolute start-50 card_Bottom">
                 <div class="card-img">
-                  <img src="Assets/svg/twitch.svg" alt="" />
+                  <img src="Assets/svg/twitter.svg" alt="twitter" />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Evan lahti</h5>
                   <h6 class="card-subtitle mb-2 text-muted">PC Gamer</h6>
                   <p class="card-text">
-                    "One of my gaming highlights of the year"
+                    "Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is
+                    Ridiculous."
                   </p>
                   <h6 class="card-subtitle mb-2 text-muted">
-                    October 18, 2021
+                    December 24, 2021
                   </h6>
                 </div>
               </div>
@@ -381,7 +377,42 @@
           </form>
         </div>
       </div>
-      <div class="row footer_nav container-lg m-auto"></div>
+      <div class="row footer_nav container-lg m-auto d-grid">
+        <div class="col footer_navLeft">
+          <ul class="d-flex">
+            <li>
+              <a href="#main">MAIN</a>
+            </li>
+            <li>
+              <a href="#about">ABOUT</a>
+            </li>
+            <li>
+              <a href="#gamefeatures">GAME FEATURES</a>
+            </li>
+            <li>
+              <a href="#systemrequirements">SYSTEM REQUIREMENTS</a>
+            </li>
+            <li>
+              <a href="#quotes">QUOTES</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col footer_navRight d-flex">
+          <a href="">
+            <img src="/Assets/svg/facebook.svg" alt="facebook" />
+          </a>
+          <a href="">
+            <img src="/Assets/svg/twitter.svg" alt="twitter" />
+          </a>
+          <a href="">
+            <img src="/Assets/svg/youtube.svg" alt="youtube" />
+          </a>
+          <a href="">
+            <img src="/Assets/svg/twitch.svg" alt="twitch" />
+          </a>
+        </div>
+      </div>
       <div class="row footer_text container-lg m-auto">
         <p class="col">&COPY; 2021 Your Games.Inc. All Rights Reserved</p>
         <div class="col footer_misc">
