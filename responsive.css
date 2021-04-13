@@ -1,7 +1,80 @@
-@media all and (min-width: 1024px) {
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 !important;
+  }
+
+  .games_Desc {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .games_Title,
+  .games_slider {
+    width: 100%;
+  }
+
+  .features_Avatar {
+    display: none;
+  }
+
+  .feature_description {
+    width: 100%;
+  }
+
+  .requirements_SectionDetails {
+    width: 100%;
+  }
+
+  .requirements_SectionSpace {
+    display: none;
+  }
+
+  .topscores_Section > .row {
+    display: grid !important;
+    grid-template-rows: auto;
+  }
+
+  .topscores_Description,
+  .topscores_Cards {
+    width: 100%;
+    padding: 0;
+  }
+
+  .newsletter_form {
+    text-align: center;
+  }
+
+  .footer_images {
+    display: none;
+  }
+
+  .footer_newsletter {
+    width: 100%;
+  }
+
+  .newsletter_Form button {
+    padding: 0 !important;
+  }
+
+  .footer_nav {
+    grid-template-columns: unset;
+    grid-template-rows: auto;
+    padding-bottom: 1rem;
+  }
+
+  .footer_navLeft {
+    padding: unset;
+    margin: auto;
+  }
+
+  .footer_navRight {
+    margin: auto;
+  }
 }
 
-@media all and (min-width: 768px) {
+@media (min-width: 768px) {
   .hero_Title > h1 {
     font-size: 80px;
   }
