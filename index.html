@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/Assets/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
     <link
@@ -84,11 +85,12 @@
       </div>
 
       <div id="about" class="games_Section cover_Background">
-        <div class="row container games_Title">
-          <h5>What's so special?</h5>
-        </div>
-        <div class="row container mx-auto">
-          <div class="col-3 g-0 games_Desc">
+        <div class="row container m-auto games_Desc position-relative">
+          <span
+            class="position-absolute top-0 start-50 translate-middle text-center"
+            >What's so special?
+          </span>
+          <div class="col-3 g-0 games_Title">
             <h2>THE GAMES</h2>
           </div>
           <div class="col-9 g-0 games_slider">
@@ -174,7 +176,7 @@
       <div id="gamefeatures" class="features_Section cover_Background">
         <div class="row container m-auto">
           <div class="col-7 features_Avatar"></div>
-          <div class="col-5">
+          <div class="col-5 feature_description">
             <div class="row features_Title">
               <h5>What's so special?</h5>
               <h3>FEATURES</h3>
@@ -210,7 +212,7 @@
             class="position-absolute top-0 start-50 translate-middle text-center"
             >Can My Computer Run This Game ?
           </span>
-          <div class="col-6">
+          <div class="col-6 requirements_SectionDetails">
             <div class="row">
               <h3>SYSTEM REQUIREMENTS</h3>
             </div>
@@ -260,14 +262,14 @@
               </table>
             </div>
           </div>
-          <div class="col-6"></div>
+          <div class="col-6 requirements_SectionSpace"></div>
         </div>
       </div>
 
       <div class="topscores_Section cover_Background">
         <div class="row container m-auto align-items-center h-100">
-          <div class="col-6">
-            <div class="row topscores_Description">
+          <div class="col-6 topscores_Description">
+            <div class="row">
               <h5>TOP SCORES</h5>
               <p>This top score from various games provided on this platform</p>
             </div>
@@ -340,12 +342,14 @@
     </main>
 
     <footer id="footer" class="newsletter cover_Background">
-      <div class="row h-100 container-lg m-auto align-items-center">
+      <div
+        class="row newsletter_form h-100 container-lg m-auto align-items-center"
+      >
         <div class="col-5 footer_images"></div>
         <div class="col-7 footer_newsletter">
           <div class="row newsletter_Text">
-            <h6>Want to stay in touch ?</h6>
-            <h1>NEWSLETTER SUBSCRIBE</h1>
+            <p>Want to stay in touch ?</p>
+            <h2>NEWSLETTER SUBSCRIBE</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               dolorem necessitatibus quidem molestias deleniti mollitia
