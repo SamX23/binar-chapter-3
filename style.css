@@ -34,10 +34,14 @@ a:hover {
   color: white !important;
 }
 
+main {
+  display: grid;
+  grid-template-rows: repeat(5, 100vh) !important;
+}
+
 /* Specific styling */
 
 .cover_Background {
-  height: 100vh !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,6 +52,10 @@ a:hover {
 .nav_text a {
   font-size: 1em;
   letter-spacing: 0.1em;
+}
+
+.nav_text li:hover {
+  box-shadow: inset 0px 0px 0px 1px azure;
 }
 
 .navbar-brand {
@@ -90,40 +98,50 @@ a:hover {
 }
 
 .hero_scroll {
+  margin: auto;
   text-align: center;
+  cursor: pointer;
 }
 
 .hero_scroll p {
   margin: 0;
 }
 
+.hero_scroll img {
+  animation: 2s hovering infinite;
+}
+
+@keyframes hovering {
+  0% {
+    width: 1rem;
+  }
+
+  50% {
+    width: 2rem;
+  }
+
+  100% {
+    width: 1rem;
+  }
+}
+
 /* Games section */
 .games_Section {
   background-image: url("Assets/images/the-games-bg.jpg");
   display: grid;
-  grid-template-rows: 3fr 9fr;
 }
 
-.games_Title {
-  margin: auto auto 0 auto !important;
+.games_Title,
+.games_slider {
+  padding-top: 2.5rem;
 }
 
-.games_Title > h6 {
-  padding: 0;
-}
-
-.games_Desc > h2 {
+.games_Desc h2 {
   font-size: 2.5rem;
 }
 
-.games_Title > h6,
-.games_Desc > h2 {
+.games_Desc h2 {
   letter-spacing: 0.2em;
-}
-
-.games_slider {
-  background-color: rebeccapurple;
-  height: 5rem;
 }
 
 /* Features section */
@@ -157,6 +175,10 @@ a:hover {
   box-shadow: inset 400px 0px 1000px 200px rgb(0 0 0 / 90%);
 }
 
+.requirements_SectionDetails {
+  padding-top: 2.5rem;
+}
+
 .requirement_Table {
   border-color: rgba(151, 151, 151, 1) !important;
 }
@@ -182,17 +204,17 @@ a:hover {
   padding-bottom: 3rem;
 }
 
-.topscores_Description > h5,
-.topscores_Description > p {
+.topscores_Description h5,
+.topscores_Description p {
   padding: 0.5rem 0;
 }
 
-.topscores_Description > h5 {
+.topscores_Description h5 {
   font-size: 4rem;
   letter-spacing: 0.5rem;
 }
 
-.topscores_Description > p {
+.topscores_Description p {
   font-size: 1.5rem;
 }
 
@@ -235,12 +257,13 @@ a:hover {
   background-position: bottom !important;
   display: grid;
   grid-template-rows: 10fr 1fr 1fr;
+  height: 100vh !important;
 }
 
-.newsletter_Text > h1 {
+.newsletter_Text > h2 {
   font-size: 4rem;
 }
-.newsletter_Text > h6,
+
 .newsletter_Text > p {
   font-size: x-large;
   padding-top: 2rem;
@@ -274,9 +297,10 @@ a:hover {
 .inputLabel {
   position: absolute;
   top: 0;
-  padding-left: 1rem;
+  left: 0;
+  padding-left: 1.5rem;
   padding-top: 0.25rem;
-  font-size: smaller;
+  font-size: x-small;
 }
 
 .orangeButton {
@@ -290,17 +314,23 @@ a:hover {
   grid-template-columns: 9fr 3fr;
 }
 
+.footer_navLeft {
+  padding-left: 10vw;
+}
+
 .footer_navLeft ul {
   list-style-type: none;
-  justify-content: flex-end;
   justify-content: space-evenly;
-  margin-left: 25%;
 }
 
 .footer_navRight {
   text-align: right;
   justify-content: space-evenly;
   margin-left: 25%;
+}
+
+.footer_navRight img:hover {
+  margin-bottom: 1rem;
 }
 
 .footer_text {
