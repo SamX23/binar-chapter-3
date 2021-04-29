@@ -137,7 +137,6 @@ main {
 /* Games section */
 .games_Section {
   background-image: url("Assets/images/the-games-bg.jpg");
-  display: grid;
 }
 
 .games_Title,
@@ -153,10 +152,15 @@ main {
   letter-spacing: 0.2em;
 }
 
+.carousel-indicators button {
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 50%;
+}
+
 /* Features section */
 .features_Section {
   background-image: url("Assets/images/features.jpg");
-  display: grid;
   letter-spacing: 0.2em;
 }
 
@@ -180,7 +184,6 @@ main {
 /* Requirements section */
 .requirements_Section {
   background-image: url("Assets/images/requirements.png");
-  display: grid;
   box-shadow: inset 400px 0px 1000px 200px rgb(0 0 0 / 90%);
 }
 
@@ -206,7 +209,6 @@ main {
 .topscores_Section {
   background-image: url("Assets/images/top-score-bg.png");
   background-position: top !important;
-  display: grid;
 }
 
 .topscores_Description {
@@ -233,23 +235,13 @@ main {
 }
 
 .topscores_Cards {
-  height: 40rem;
-  position: relative;
-  padding-left: 5rem;
+  min-height: 40rem;
 }
 
 .card {
   border-radius: 10px !important;
-  width: 350px !important;
+  max-width: 20rem !important;
   text-align: center;
-}
-
-.card_Middle {
-  top: 35% !important;
-}
-
-.card_Bottom {
-  top: 70% !important;
 }
 
 .topscores_Cards .card {
@@ -334,33 +326,29 @@ footer {
   grid-template-columns: 9fr 3fr;
 }
 
-.footer_navLeft {
-  padding-left: 10vw;
-}
-
 .footer_navLeft ul {
   list-style-type: none;
   justify-content: space-evenly;
+  padding: 0;
 }
 
 .footer_navRight {
   text-align: right;
   justify-content: space-evenly;
-  margin-left: 25%;
 }
 
 .footer_text {
   border-top: 2px solid #ffffff50;
-  height: fit-content;
-  padding-top: 2rem;
+  padding: 1rem 0;
 }
 
-.footer_text > p {
+.footer_text p {
   text-align: left;
   color: #8d8d8d;
+  margin: 0 !important;
 }
 
-.footer_text > div {
+.footer_misc {
   text-align: right;
 }
 
