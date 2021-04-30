@@ -191,10 +191,6 @@ main {
   padding-top: 2.5rem;
 }
 
-.requirement_Table {
-  border-color: rgba(151, 151, 151, 1) !important;
-}
-
 .requirements h3 {
   font-size: 4rem;
   letter-spacing: 0.25rem;
@@ -257,15 +253,7 @@ main {
 footer {
   background-image: url("Assets/images/bg-image-3.jpg");
   background-position: bottom !important;
-}
-
-.newsletter {
-  display: grid;
-  grid-template-rows: 10fr auto auto;
-}
-
-.footer_form {
-  padding-top: 10rem;
+  min-height: 100vh;
 }
 
 .newsletter_Text > h2 {
@@ -274,12 +262,13 @@ footer {
 
 .newsletter_Text > p {
   font-size: x-large;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .newsletter_Form {
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .newsletter_Form > div {
