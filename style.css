@@ -79,11 +79,13 @@ main {
 }
 
 .hero_Title > h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3.5rem;
   letter-spacing: 0.1em;
 }
 
 .hero_Desc > h3 {
-  margin-top: 70px;
+  margin-top: 3rem;
   font-size: 2em;
   font-weight: 400;
   letter-spacing: 2px;
@@ -98,6 +100,10 @@ main {
   margin-top: 70px;
   padding: 1em 3em;
   font-size: 1em;
+}
+
+.hero_Button > button:active {
+  transform: translateY(5px);
 }
 
 .hero_scroll {
@@ -131,7 +137,6 @@ main {
 /* Games section */
 .games_Section {
   background-image: url("Assets/images/the-games-bg.jpg");
-  display: grid;
 }
 
 .games_Title,
@@ -147,10 +152,15 @@ main {
   letter-spacing: 0.2em;
 }
 
+.carousel-indicators button {
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 50%;
+}
+
 /* Features section */
 .features_Section {
   background-image: url("Assets/images/features.jpg");
-  display: grid;
   letter-spacing: 0.2em;
 }
 
@@ -174,7 +184,6 @@ main {
 /* Requirements section */
 .requirements_Section {
   background-image: url("Assets/images/requirements.png");
-  display: grid;
   box-shadow: inset 400px 0px 1000px 200px rgb(0 0 0 / 90%);
 }
 
@@ -182,14 +191,10 @@ main {
   padding-top: 2.5rem;
 }
 
-.requirement_Table {
-  border-color: rgba(151, 151, 151, 1) !important;
-}
-
-.requirements h3 {
-  font-size: 4rem;
+.requirements_SectionDetails h3 {
+  font-size: 3rem;
   letter-spacing: 0.25rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 .table_Content > h5 {
@@ -200,7 +205,6 @@ main {
 .topscores_Section {
   background-image: url("Assets/images/top-score-bg.png");
   background-position: top !important;
-  display: grid;
 }
 
 .topscores_Description {
@@ -227,23 +231,13 @@ main {
 }
 
 .topscores_Cards {
-  height: 40rem;
-  position: relative;
-  padding-left: 5rem;
+  min-height: 40rem;
 }
 
 .card {
   border-radius: 10px !important;
-  width: 350px !important;
+  max-width: 20rem !important;
   text-align: center;
-}
-
-.card_Middle {
-  top: 35% !important;
-}
-
-.card_Bottom {
-  top: 70% !important;
 }
 
 .topscores_Cards .card {
@@ -257,17 +251,7 @@ main {
 /* Footer section */
 /* Newsletter section */
 footer {
-  background-image: url("Assets/images/bg-image-3.jpg");
-  background-position: bottom !important;
-}
-
-.newsletter {
-  display: grid;
-  grid-template-rows: 10fr auto auto;
-}
-
-.footer_form {
-  padding-top: 10rem;
+  min-height: 100vh;
 }
 
 .newsletter_Text > h2 {
@@ -276,12 +260,13 @@ footer {
 
 .newsletter_Text > p {
   font-size: x-large;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .newsletter_Form {
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .newsletter_Form > div {
@@ -328,33 +313,29 @@ footer {
   grid-template-columns: 9fr 3fr;
 }
 
-.footer_navLeft {
-  padding-left: 10vw;
-}
-
 .footer_navLeft ul {
   list-style-type: none;
   justify-content: space-evenly;
+  padding: 0;
 }
 
 .footer_navRight {
   text-align: right;
   justify-content: space-evenly;
-  margin-left: 25%;
 }
 
 .footer_text {
   border-top: 2px solid #ffffff50;
-  height: fit-content;
-  padding-top: 2rem;
+  padding: 1rem 0;
 }
 
-.footer_text > p {
+.footer_text p {
   text-align: left;
   color: #8d8d8d;
+  margin: 0 !important;
 }
 
-.footer_text > div {
+.footer_misc {
   text-align: right;
 }
 
