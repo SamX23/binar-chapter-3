@@ -191,10 +191,10 @@ main {
   padding-top: 2.5rem;
 }
 
-.requirements h3 {
-  font-size: 4rem;
+.requirements_SectionDetails h3 {
+  font-size: 3rem;
   letter-spacing: 0.25rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 .table_Content > h5 {
@@ -251,8 +251,6 @@ main {
 /* Footer section */
 /* Newsletter section */
 footer {
-  background-image: url("Assets/images/bg-image-3.jpg");
-  background-position: bottom !important;
   min-height: 100vh;
 }
 
