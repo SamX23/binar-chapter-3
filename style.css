@@ -271,6 +271,7 @@ main {
 
 .card-img {
   width: fit-content !important;
+  z-index: 1;
 }
 
 .card-profile-img {
@@ -288,26 +289,15 @@ main {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  z-index: auto;
 }
 
 .img-shadow {
+  position: absolute;
   border-radius: 50% !important;
   background: var(--orange);
   width: 4rem;
   height: 4rem;
-  transform: translate(5px, 5px);
-}
-
-.img-shadow::after {
-  background-color: var(--orange);
-  background-image: url(/Assets/images/profile-1.jpg);
-  content: "";
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-5px, -5px);
-  width: 4rem;
-  height: 4rem;
+  transform: translate(4px, 4px);
 }
 
 .card-title {
