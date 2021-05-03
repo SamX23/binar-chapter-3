@@ -6,13 +6,17 @@
   --grey: rgba(141, 141, 141, 1);
 }
 
+h1,
+h2 {
+  font-family: "Bebas Neue" !important;
+}
+
 h1 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 80px;
+  font-size: 80px !important;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
   font-size: 18px;
 }
 
@@ -30,23 +34,17 @@ nav {
   padding: 0 2rem;
   height: 5rem;
   font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 
-li a,
 a {
-  color: rgb(204, 204, 204) !important;
+  color: rgb(255, 255, 255) !important;
   text-decoration: none !important;
-}
-
-a:hover {
-  color: white !important;
 }
 
 main {
   display: grid;
   grid-template-rows: repeat(5, minmax(100vh, 100vh)) !important;
-  grid-template-columns: 1fr;
-  width: 100% !important;
 }
 
 /* Specific styling */
@@ -56,6 +54,9 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #080a0b;
+}
+
+.cover_Shadow {
   box-shadow: inset 0px 0px 91px 18px rgba(0, 0, 0, 1);
 }
 
@@ -77,29 +78,38 @@ main {
   font-size: 1.5em;
 }
 
+.orangeButton {
+  color: black !important;
+  background: linear-gradient(194.68deg, #ffb548 11.27%, var(--orange) 90.4%);
+  border: unset;
+}
+
 /* Hero section */
 .hero_Section {
-  background-image: url("Assets/images/main-bg.jpg");
-  box-shadow: inset 0px -80px 25px 0px rgba(0, 0, 0, 0.541);
+  background-image: radial-gradient(
+      189.96% 61.18% at 50% 38.82%,
+      rgba(255, 181, 72, 0) 0%,
+      rgba(52, 44, 29, 0.80319) 73.22%,
+      #08090a 99.74%
+    ),
+    url("Assets/images/main-bg.jpg");
   display: grid;
   grid-template-rows: 11fr 1fr;
 }
 
 .hero_Title > h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3.5rem;
-  letter-spacing: 0.1em;
+  line-height: 83px;
+  letter-spacing: 3px;
 }
 
 .hero_Desc > h3 {
   margin-top: 3rem;
-  font-size: 2em;
-  font-weight: 400;
+  font-weight: 400 !important;
   letter-spacing: 2px;
 }
 
 .hero_Button {
-  width: 250px;
+  width: 260px;
 }
 
 .hero_Button > button {
@@ -107,6 +117,7 @@ main {
   margin-top: 70px;
   padding: 1em 3em;
   font-size: 1em;
+  width: 100%;
 }
 
 .hero_Button > button:active {
@@ -148,15 +159,15 @@ main {
 
 .games_Title,
 .games_slider {
-  padding-top: 2.5rem;
+  padding-top: 1rem;
 }
 
-.games_Desc h2 {
+.games_Desc h4 {
   font-size: 2.5rem;
 }
 
-.games_Desc h2 {
-  letter-spacing: 0.2em;
+.games_Desc h4 {
+  letter-spacing: 0.2rem;
 }
 
 .carousel {
@@ -166,11 +177,12 @@ main {
 .carousel-control-prev,
 .carousel-control-next {
   position: unset !important;
+  width: 7% !important;
 }
 
 .carousel-indicators button {
-  width: 1rem !important;
-  height: 1rem !important;
+  width: 0.5rem !important;
+  height: 0.5rem !important;
   margin-left: 0.5rem !important;
   margin-right: 0.5rem !important;
   border-radius: 50%;
@@ -188,21 +200,52 @@ main {
   letter-spacing: 0.2em;
 }
 
-.features_Title > h3 {
-  font-size: 4rem;
+.features_Title > h1 {
   padding-bottom: 2rem;
 }
 
-.description_Item {
-  padding: 1.5rem 0;
+.description {
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+  row-gap: 50px;
 }
-.description_Item > h3 {
+
+.item_Container {
+  position: relative;
+}
+
+.item_Points {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.item_Line {
+  position: absolute;
+  width: 0.2rem;
+  height: 8rem;
+  left: 0.6rem;
+  background-color: white;
+}
+
+.description_Item {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: baseline;
+}
+
+.description_Item h3 {
   color: var(--orange);
 }
 
-.description_Item > p {
+.description_Item p {
   letter-spacing: unset;
   text-align: justify;
+}
+
+.active_Item {
+  background: white;
 }
 
 /* Requirements section */
@@ -215,19 +258,38 @@ main {
   padding-top: 2.5rem;
 }
 
-.requirements_SectionDetails h3 {
-  font-size: 3rem;
+.requirements_SectionDetails h1 {
   letter-spacing: 0.25rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .table_Content > h5 {
   color: var(--orange);
 }
 
+.table_bg {
+  padding: 0 !important;
+  background-image: url("./Assets//images/table.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.table_bg table {
+  margin-bottom: unset;
+}
+
+.br-bottom {
+  border-bottom: 1px solid #4d4c4c !important ;
+}
+
+.br-right {
+  border-right: 1px solid #4d4c4c !important;
+}
+
 /* Top scores section */
 .topscores_Section {
-  background-image: url("Assets/images/top-score-bg.png");
+  background-image: url("Assets/images/bg-scores.jpg");
   background-position: top !important;
 }
 
@@ -241,12 +303,7 @@ main {
 }
 
 .topscores_Description h5 {
-  font-size: 4rem;
   letter-spacing: 0.5rem;
-}
-
-.topscores_Description p {
-  font-size: 1.5rem;
 }
 
 .topscores_Button {
@@ -367,12 +424,6 @@ footer {
   padding-left: 1.5rem;
   padding-top: 0.25rem;
   font-size: x-small;
-}
-
-.orangeButton {
-  color: black !important;
-  background: linear-gradient(194.68deg, #ffb548 11.27%, var(--orange) 90.4%);
-  border: unset;
 }
 
 .footer_nav {

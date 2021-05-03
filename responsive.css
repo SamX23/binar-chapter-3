@@ -1,3 +1,14 @@
+@media (min-width: 1196px) {
+  .table_bg {
+    background-position: left !important;
+  }
+
+  .table_bg table {
+    width: 28rem;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 1024px) {
   .container {
     padding: 0 !important;
@@ -21,6 +32,10 @@
 
   .feature_description {
     width: 100% !important;
+    background-color: rgb(0 0 0 / 66%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
   }
 
   .requirements_SectionDetails {
@@ -29,6 +44,10 @@
 
   .requirements_SectionSpace {
     display: none;
+  }
+
+  .table_bg {
+    width: 28rem !important;
   }
 
   .newsletter_form {
@@ -56,10 +75,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero_Title > h1 {
-    font-size: 80px;
-  }
-
   nav,
   .navbar-nav {
     background-color: rgb(0, 0, 0);
@@ -77,6 +92,7 @@
   .topscores_Cards {
     padding: 0;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   .footer_images {
@@ -89,19 +105,56 @@
 }
 
 @media (max-width: 650px) {
-  .hero_Title > h1 {
-    font-size: 3em;
+  .features_Title {
+    text-align: center;
+  }
+  .topscores_Section {
+    padding-bottom: 4rem;
   }
 
   .topscores_Cards {
     justify-content: center;
   }
 
+  .features_Title h1,
+  .requirements_SectionDetails h1 {
+    font-size: 2.5rem !important;
+    text-align: center;
+  }
+
   .card {
     position: unset !important;
   }
 
+  .table_bg {
+    width: 20rem !important;
+    margin: auto;
+  }
+
+  .table_bg table {
+    margin: auto;
+    font-size: 0.7rem;
+  }
+
+  table h5 {
+    font-size: 1rem;
+  }
+
+  .table_bg table td p {
+    margin-bottom: 0;
+  }
+
+  .footer_nav {
+    grid-template-columns: 1fr !important;
+  }
+
   .footer_navLeft {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .description_Item p {
+    font-size: 0.74rem !important;
   }
 }
