@@ -1,3 +1,14 @@
+@media (min-width: 1196px) {
+  .table_bg {
+    background-position: left !important;
+  }
+
+  .table_bg table {
+    width: 28rem;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 1024px) {
   .container {
     padding: 0 !important;
@@ -33,6 +44,10 @@
 
   .requirements_SectionSpace {
     display: none;
+  }
+
+  .table_bg {
+    width: 28rem !important;
   }
 
   .newsletter_form {
@@ -111,11 +126,35 @@
     position: unset !important;
   }
 
+  .table_bg {
+    width: 20rem !important;
+    margin: auto;
+  }
+
+  .table_bg table {
+    margin: auto;
+    font-size: 0.7rem;
+  }
+
+  table h5 {
+    font-size: 1rem;
+  }
+
+  .table_bg table td p {
+    margin-bottom: 0;
+  }
+
   .footer_nav {
     grid-template-columns: 1fr !important;
   }
 
   .footer_navLeft {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .description_Item p {
+    font-size: 0.74rem !important;
   }
 }
