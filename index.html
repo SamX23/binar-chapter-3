@@ -90,7 +90,10 @@
       <!-- End of Hero Main Section -->
 
       <!-- About Sectuion -->
-      <div id="about" class="games_Section cover_Background d-flex">
+      <div
+        id="about"
+        class="games_Section cover_Background cover_Shadow d-flex"
+      >
         <div class="container align-self-center">
           <div class="row m-auto games_Desc position-relative">
             <span class="position-absolute top-0 start-50 translate-middle p-0"
@@ -126,6 +129,18 @@
                     data-bs-slide-to="2"
                     aria-label="Slide 3"
                   ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
                 </div>
                 <button
                   class="carousel-control-prev"
@@ -138,6 +153,20 @@
                 </button>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
+                    <img
+                      src="./Assets//images/rockpaperstrategy-1600.jpg"
+                      class="d-block w-100"
+                      alt="Rock paper strategy"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./Assets//images/rockpaperstrategy-1600.jpg"
+                      class="d-block w-100"
+                      alt="Rock paper strategy"
+                    />
+                  </div>
+                  <div class="carousel-item">
                     <img
                       src="./Assets//images/rockpaperstrategy-1600.jpg"
                       class="d-block w-100"
@@ -176,7 +205,7 @@
       <!-- End of About Section -->
 
       <!-- Feature Section -->
-      <div class="features_Section cover_Background d-flex">
+      <div class="features_Section cover_Background cover_Shadow d-flex">
         <div class="container align-self-center">
           <div class="row m-auto">
             <div class="col-7 features_Avatar"></div>
@@ -188,7 +217,10 @@
               <div class="row features_Roadmap">
                 <div class="col description">
                   <div class="description_Item">
-                    <div class="item_Points active_Item"></div>
+                    <div class="item_Container">
+                      <div class="item_Points active_Item"></div>
+                      <div class="item_Line"></div>
+                    </div>
                     <div>
                       <h3>TRADITIONAL GAMES</h3>
                       <p>
@@ -214,7 +246,7 @@
       <!-- End of Feature Section -->
 
       <!-- Requirements Section -->
-      <div class="requirements_Section cover_Background d-flex">
+      <div class="requirements_Section cover_Background cover_Shadow d-flex">
         <div class="container align-self-center">
           <div class="row m-auto position-relative">
             <span
@@ -226,55 +258,56 @@
                 <h1>SYSTEM REQUIREMENTS</h1>
               </div>
               <div class="row w-100 m-auto">
-                <!-- <div class="table_bg"> -->
-                <table class="table text-white table-bordered">
-                  <tr>
-                    <td>
-                      <div class="table_Content p-2">
-                        <h5>OS:</h5>
-                        <p>
-                          Windows 7 64-bit only (No OSX support at this time)
-                        </p>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="table_Content p-2">
-                        <h5>PROCESSOR:</h5>
-                        <p>
-                          Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="table_Content p-2">
-                        <h5>MEMORY:</h5>
-                        <p>4 GB RAM</p>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="table_Content p-2">
-                        <h5>STORAGE:</h5>
-                        <p>8 GB available space</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      <div class="table_Content p-2">
-                        <h5>GRAPHICS:</h5>
-                        <p>
-                          NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB
-                          DirectX11 (Shader Model 5)
-                        </p>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
+                <div class="table_bg">
+                  <table class="table text-white table-borderless">
+                    <tr class="br-bottom">
+                      <td class="br-right">
+                        <div class="table_Content">
+                          <h5>OS:</h5>
+                          <p>
+                            Windows 7 64-bit only (No OSX support at this time)
+                          </p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="table_Content">
+                          <h5>PROCESSOR:</h5>
+                          <p>
+                            Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8
+                            GHZ
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="br-bottom">
+                      <td class="br-right">
+                        <div class="table_Content">
+                          <h5>MEMORY:</h5>
+                          <p>4 GB RAM</p>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="table_Content">
+                          <h5>STORAGE:</h5>
+                          <p>8 GB available space</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <div class="table_Content">
+                          <h5>GRAPHICS:</h5>
+                          <p>
+                            NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB
+                            DirectX11 (Shader Model 5)
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
               </div>
             </div>
-            <!-- </div> -->
             <div class="col-6 requirements_SectionSpace"></div>
           </div>
         </div>
@@ -282,7 +315,7 @@
       <!-- End of Requirements Section -->
 
       <!-- Top Scores Section -->
-      <div class="topscores_Section cover_Background d-flex w-100">
+      <div class="topscores_Section cover_Background cover_Shadow d-flex w-100">
         <div class="container align-self-center">
           <div class="row align-items-center w-100 m-auto">
             <div class="col topscores_Description p-2">
@@ -297,7 +330,7 @@
                   type="submit"
                   class="btn btn-primary orangeButton fw-bold topscores_Button"
                 >
-                  More Scores
+                  See More
                 </button>
               </div>
             </div>
@@ -402,7 +435,7 @@
     <!-- End of Main Content -->
 
     <!-- Footer -->
-    <footer id="footer" class="cover_Background d-flex">
+    <footer id="footer" class="cover_Background cover_Shadow d-flex">
       <div class="container align-self-center">
         <div class="row m-auto p-xl-5">
           <div class="col-5 footer_images p-xl-5">
@@ -414,15 +447,15 @@
               alt=""
             />
           </div>
-          <div class="col-7 footer_newsletter">
+          <div class="col-7 footer_newsletter align-self-center">
             <div class="row newsletter_Text">
               <p>Want to stay in touch ?</p>
               <h2>NEWSLETTER SUBSCRIBE</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                dolorem necessitatibus quidem molestias deleniti mollitia
-                cupiditate accusamus fugit ex porro ducimus eum, ad, dolor amet,
-                inventore iusto expedita non eaque.
+                In order to start receiving our news, all you have to do is
+                enter your email address. Everything else will be taken care of
+                by us. We will send you emails containing information about
+                game. We don’t spam.
               </p>
             </div>
             <form class="row g-3 newsletter_Form">
