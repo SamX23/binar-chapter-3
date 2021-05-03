@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="style.css" />
     <link href="./Assets/dist/css/bootstrap.min.css" rel="stylesheet" />
     <title>Binar Challenge Chapter 3</title>
   </head>
 
   <body class="text-white w-100">
+    <!-- Navbar -->
     <header>
       <nav class="nav_text navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
@@ -60,7 +61,11 @@
         </div>
       </nav>
     </header>
+    <!-- End of Navbar -->
+
+    <!-- Main Content -->
     <main>
+      <!-- Hero Main Section -->
       <div id="main" class="hero_Section cover_Background">
         <div class="m-auto text-center">
           <div class="hero_Title">
@@ -68,7 +73,7 @@
           </div>
 
           <div class="hero_Desc">
-            <h3 class="lead">Experience new traditional game play</h3>
+            <h3>Experience new traditional game play</h3>
           </div>
 
           <div class="hero_Button m-auto">
@@ -82,16 +87,17 @@
           </a>
         </div>
       </div>
+      <!-- End of Hero Main Section -->
 
+      <!-- About Sectuion -->
       <div id="about" class="games_Section cover_Background d-flex">
         <div class="container align-self-center">
           <div class="row m-auto games_Desc position-relative">
-            <span
-              class="position-absolute top-0 start-50 translate-middle text-center"
+            <span class="position-absolute top-0 start-50 translate-middle p-0"
               >What's so special?
             </span>
             <div class="col-3 g-0 games_Title">
-              <h2>THE GAMES</h2>
+              <h4>THE GAMES</h4>
             </div>
             <div class="col-9 g-0 games_slider">
               <div
@@ -167,7 +173,9 @@
           </div>
         </div>
       </div>
+      <!-- End of About Section -->
 
+      <!-- Feature Section -->
       <div class="features_Section cover_Background d-flex">
         <div class="container align-self-center">
           <div class="row m-auto">
@@ -175,7 +183,7 @@
             <div class="col-5 feature_description">
               <div class="row features_Title">
                 <h5>What's so special?</h5>
-                <h3>FEATURES</h3>
+                <h1>FEATURES</h1>
               </div>
               <div class="row features_Roadmap">
                 <div class="col description">
@@ -198,7 +206,9 @@
           </div>
         </div>
       </div>
+      <!-- End of Feature Section -->
 
+      <!-- Requirements Section -->
       <div class="requirements_Section cover_Background d-flex">
         <div class="container align-self-center">
           <div class="row m-auto position-relative">
@@ -208,7 +218,7 @@
             </span>
             <div class="col-6 requirements_SectionDetails">
               <div class="row">
-                <h3>SYSTEM REQUIREMENTS</h3>
+                <h1>SYSTEM REQUIREMENTS</h1>
               </div>
               <div class="row w-100 m-auto">
                 <table class="table text-white table-bordered">
@@ -262,18 +272,20 @@
           </div>
         </div>
       </div>
+      <!-- End of Requirements Section -->
 
+      <!-- Top Scores Section -->
       <div class="topscores_Section cover_Background d-flex w-100">
         <div class="container align-self-center">
-          <div class="row align-items-center w-100">
+          <div class="row align-items-center w-100 m-auto">
             <div class="col topscores_Description p-2">
               <div class="row m-auto p-1">
-                <h5>TOP SCORES</h5>
-                <p>
+                <h5 class="fs-1">TOP SCORES</h5>
+                <p class="fs-5">
                   This top score from various games provided on this platform
                 </p>
               </div>
-              <div class="row">
+              <div class="row m-auto align-items-center">
                 <button
                   type="submit"
                   class="btn btn-primary orangeButton fw-bold topscores_Button"
@@ -284,7 +296,7 @@
             </div>
             <div class="col topscores_Cards d-grid">
               <div class="row h-25 w-100">
-                <div class="card start-50 w-auto">
+                <div class="card w-auto ms-auto">
                   <div class="card-profile d-flex py-2">
                     <div class="card-profile-img d-flex">
                       <div class="card-img">
@@ -312,7 +324,7 @@
                 </div>
               </div>
               <div class="row h-25 w-100">
-                <div class="card start-0 w-auto">
+                <div class="card w-auto">
                   <div class="card-profile d-flex py-2">
                     <div class="card-profile-img d-flex">
                       <div class="card-img">
@@ -344,7 +356,7 @@
                 </div>
               </div>
               <div class="row h-25 w-100">
-                <div class="card start-50 w-auto">
+                <div class="card w-auto ms-auto">
                   <div class="card-profile d-flex py-2">
                     <div class="card-profile-img d-flex">
                       <div class="card-img">
@@ -378,8 +390,11 @@
           </div>
         </div>
       </div>
+      <!-- End of Top Scores Section -->
     </main>
+    <!-- End of Main Content -->
 
+    <!-- Footer -->
     <footer id="footer" class="cover_Background d-flex">
       <div class="container align-self-center">
         <div class="row m-auto p-xl-5">
@@ -476,6 +491,7 @@
         </div>
       </div>
     </footer>
+    <!-- End of Footer -->
 
     <script src="./Assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
