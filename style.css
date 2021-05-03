@@ -195,16 +195,36 @@ main {
   padding-bottom: 2rem;
 }
 
-.description_Item {
-  padding: 1.5rem 0;
+.description {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  row-gap: 3rem;
 }
-.description_Item > h3 {
+
+.item_Points {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.description_Item {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: baseline;
+}
+
+.description_Item h3 {
   color: var(--orange);
 }
 
-.description_Item > p {
+.description_Item p {
   letter-spacing: unset;
   text-align: justify;
+}
+
+.active_Item {
+  background: white;
 }
 
 /* Requirements section */
@@ -225,6 +245,18 @@ main {
 .table_Content > h5 {
   color: var(--orange);
 }
+
+/* .table_bg {
+  width: 100%;
+  background-image: url("./Assets//images/table.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.table_bg table {
+  max-width: 30rem;
+} */
 
 /* Top scores section */
 .topscores_Section {
