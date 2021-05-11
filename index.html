@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" href="style.css" />
     <link href="./Assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <title>Binar Challenge Chapter 3</title>
+    <link href="responsive.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Traditional Games</title>
   </head>
 
   <body class="text-white w-100">
@@ -77,7 +77,9 @@
           </div>
 
           <div class="hero_Button m-auto">
-            <button type="button" class="btn fw-bold">PLAY NOW</button>
+            <button type="button" class="btn">
+              <a href="#games">TRIAL</a>
+            </button>
           </div>
         </div>
         <div class="hero_scroll">
@@ -148,6 +150,7 @@
                   data-bs-target="#carouselIndicators"
                   data-bs-slide="prev"
                 >
+                  <img src="./src/assets/images/switch-left.png" alt="" />
                   <img src="./Assets/images/switch-left.png" alt="" />
                   <span class="visually-hidden">Previous</span>
                 </button>
@@ -250,14 +253,20 @@
         <div class="container align-self-center">
           <div class="row m-auto position-relative">
             <span
-              class="position-absolute top-0 start-50 translate-middle text-center"
+              class="
+                position-absolute
+                top-0
+                start-50
+                translate-middle
+                text-center
+              "
               >Can My Computer Run This Game ?
             </span>
             <div class="col-6 requirements_SectionDetails">
               <div class="row">
                 <h1>SYSTEM REQUIREMENTS</h1>
               </div>
-              <div class="row w-100 m-auto">
+              <div class="row">
                 <div class="table_bg">
                   <table class="table text-white table-borderless">
                     <tr class="br-bottom">
@@ -317,7 +326,7 @@
       <!-- Top Scores Section -->
       <div class="topscores_Section cover_Background cover_Shadow d-flex w-100">
         <div class="container align-self-center">
-          <div class="row align-items-center w-100 m-auto">
+          <div class="row align-items-center m-auto">
             <div class="col topscores_Description p-2">
               <div class="row m-auto p-1">
                 <h5 class="fs-1">TOP SCORES</h5>
@@ -335,8 +344,8 @@
               </div>
             </div>
             <div class="col topscores_Cards d-grid">
-              <div class="row h-25 w-100">
-                <div class="card w-auto ms-auto">
+              <div class="row row-end">
+                <div class="card">
                   <div class="card-profile d-flex py-2">
                     <div class="card-profile-img d-flex">
                       <div class="card-img">
@@ -363,8 +372,8 @@
                   </div>
                 </div>
               </div>
-              <div class="row h-25 w-100">
-                <div class="card w-auto">
+              <div class="row">
+                <div class="card">
                   <div class="card-profile d-flex py-2">
                     <div class="card-profile-img d-flex">
                       <div class="card-img">
@@ -395,8 +404,8 @@
                   </div>
                 </div>
               </div>
-              <div class="row h-25 w-100">
-                <div class="card w-auto ms-auto">
+              <div class="row row-end">
+                <div class="card">
                   <div class="card-profile d-flex py-2">
                     <div class="card-profile-img d-flex">
                       <div class="card-img">
