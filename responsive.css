@@ -1,11 +1,6 @@
 @media (min-width: 1196px) {
-  .table_bg {
-    background-position: left !important;
-  }
-
   .table_bg table {
     width: 28rem;
-    margin-right: auto;
   }
 }
 
@@ -46,10 +41,6 @@
     display: none;
   }
 
-  .table_bg {
-    width: 28rem !important;
-  }
-
   .newsletter_form {
     text-align: center;
   }
@@ -84,15 +75,18 @@
     padding-left: 1rem;
   }
 
-  .topscores_Section .row {
-    flex-direction: column;
-  }
-
   .topscores_Description,
   .topscores_Cards {
-    padding: 0;
     margin-bottom: 1rem;
     text-align: center;
+  }
+
+  .topscores_Cards {
+    align-content: space-around;
+  }
+
+  .topscores_Cards > .row {
+    justify-content: unset;
   }
 
   .footer_images {
@@ -108,12 +102,9 @@
   .features_Title {
     text-align: center;
   }
+
   .topscores_Section {
     padding-bottom: 4rem;
-  }
-
-  .topscores_Cards {
-    justify-content: center;
   }
 
   .features_Title h1,
@@ -128,6 +119,7 @@
 
   .table_bg {
     width: 20rem !important;
+    height: unset !important;
     margin: auto;
   }
 
@@ -144,6 +136,14 @@
     margin-bottom: 0;
   }
 
+  .topscores_Button {
+    margin: auto;
+  }
+
+  .topscores_Cards {
+    justify-content: center;
+  }
+
   .footer_nav {
     grid-template-columns: 1fr !important;
   }
@@ -154,7 +154,25 @@
 }
 
 @media (max-width: 400px) {
+  .hero_Title > h1 {
+    font-size: 3.5rem;
+  }
+
   .description_Item p {
     font-size: 0.74rem !important;
+  }
+
+  .games_Section,
+  .requirements_Section {
+    padding-top: 5rem;
+  }
+
+  .topscores_Section,
+  main {
+    display: inline-block !important;
+  }
+
+  .requirements_SectionDetails {
+    margin-bottom: 7rem;
   }
 }

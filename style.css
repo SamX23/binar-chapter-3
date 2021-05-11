@@ -8,15 +8,15 @@
 
 h1,
 h2 {
-  font-family: "Bebas Neue" !important;
+  font-family: "Bebas Neue";
 }
 
 h1 {
-  font-size: 80px !important;
+  font-size: 80px;
 }
 
 body {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
@@ -39,12 +39,12 @@ nav {
 
 a {
   color: rgb(255, 255, 255) !important;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 main {
   display: grid;
-  grid-template-rows: repeat(5, minmax(100vh, 100vh)) !important;
+  grid-template-rows: repeat(5, minmax(100vh, 100vh));
 }
 
 /* Specific styling */
@@ -79,7 +79,7 @@ main {
 }
 
 .orangeButton {
-  color: black !important;
+  color: black;
   background: linear-gradient(194.68deg, #ffb548 11.27%, var(--orange) 90.4%);
   border: unset;
 }
@@ -102,22 +102,32 @@ main {
   letter-spacing: 3px;
 }
 
+.hero_Desc {
+  margin: 70px 0;
+}
 .hero_Desc > h3 {
   margin-top: 3rem;
-  font-weight: 400 !important;
+  font-weight: 400;
   letter-spacing: 2px;
 }
 
 .hero_Button {
   width: 260px;
+  margin-top: 70px;
 }
 
 .hero_Button > button {
   background: linear-gradient(194.68deg, #ffb548 11.27%, var(--orange) 90.4%);
-  margin-top: 70px;
-  padding: 1em 3em;
-  font-size: 1em;
+  padding: 0;
   width: 100%;
+}
+
+.hero_Button > button > a {
+  display: block;
+  padding: 0.9em;
+  font-size: 1em;
+  font-weight: bold;
+  color: black !important;
 }
 
 .hero_Button > button:active {
@@ -176,13 +186,13 @@ main {
 
 .carousel-control-prev,
 .carousel-control-next {
-  position: unset !important;
-  width: 7% !important;
+  position: unset;
+  width: 7%;
 }
 
 .carousel-indicators button {
-  width: 0.5rem !important;
-  height: 0.5rem !important;
+  width: 1rem !important;
+  height: 1rem !important;
   margin-left: 0.5rem !important;
   margin-right: 0.5rem !important;
   border-radius: 50%;
@@ -268,29 +278,32 @@ main {
 }
 
 .table_bg {
-  padding: 0 !important;
+  padding: 0;
   background-image: url("./Assets//images/table.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  width: 500px;
+  height: 350px;
 }
 
 .table_bg table {
-  margin-bottom: unset;
+  margin: auto;
+  width: 100%;
 }
 
 .br-bottom {
-  border-bottom: 1px solid #4d4c4c !important ;
+  border-bottom: 1px solid #4d4c4c;
 }
 
 .br-right {
-  border-right: 1px solid #4d4c4c !important;
+  border-right: 1px solid #4d4c4c;
 }
 
 /* Top scores section */
 .topscores_Section {
   background-image: url("Assets/images/bg-scores.jpg");
-  background-position: top !important;
+  background-position: top;
 }
 
 .topscores_Description {
@@ -307,8 +320,8 @@ main {
 }
 
 .topscores_Button {
-  width: 260px !important;
-  height: 60px !important;
+  width: 260px;
+  height: 60px;
 }
 
 .topscores_Cards {
@@ -319,15 +332,19 @@ main {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.row-end {
+  justify-content: flex-end;
+}
+
 .card {
-  border-radius: 10px !important;
-  max-width: 20rem !important;
+  border-radius: 10px;
+  max-width: 20rem;
   text-align: left;
   position: absolute;
 }
 
 .card-img {
-  width: fit-content !important;
+  width: fit-content;
   z-index: 1;
 }
 
@@ -338,8 +355,8 @@ main {
 }
 
 .card-profile-img .card-img {
-  width: 4rem !important;
-  height: 4rem !important;
+  width: 4rem;
+  height: 4rem;
 }
 
 .card-profile-img img {
@@ -350,7 +367,7 @@ main {
 
 .img-shadow {
   position: absolute;
-  border-radius: 50% !important;
+  border-radius: 50%;
   background: var(--orange);
   width: 4rem;
   height: 4rem;
@@ -358,17 +375,17 @@ main {
 }
 
 .card-title {
-  color: var(--orange) !important;
+  color: var(--orange);
 }
 
 .card-title,
 .card-subtitle {
-  margin: 0 !important;
+  margin: 0;
 }
 
 .card-body {
-  padding: 0.5rem !important;
-  padding-left: unset !important;
+  padding: 0.5rem;
+  padding-left: unset;
 }
 
 /* Footer section */
@@ -449,7 +466,7 @@ footer {
 .footer_text p {
   text-align: left;
   color: var(--grey);
-  margin: 0 !important;
+  margin: 0;
 }
 
 .footer_misc {
